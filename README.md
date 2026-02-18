@@ -39,3 +39,11 @@ The focus of this module is backend development fundamentals using Python.
 - Built first API endopoint 
 - Succesfully launched local server 
 - Verified automatic documentation at  /docs 
+
+## API Endpoints
+
+### GET /
+Returns a confirmation message that the API is running. 
+
+### POST /agent 
+Simulates a basic AI agent interaction for client inquiries. 
