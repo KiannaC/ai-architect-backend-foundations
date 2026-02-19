@@ -23,8 +23,14 @@ The focus of this module is backend development fundamentals using Python.
 1. Activate the virtual environment:
    venv\Scripts\activate
 
-2. Run the script:
-   python main.py
+2. Run the server:
+   uvicorn app.main:app --reload
+
+3. Open in browser:
+   http://127.0.0.1:8000
+
+4. Interactive API documentation:
+   http://127.0.0.1:8000/docs
 
 ## Learning Progress
 
@@ -47,3 +53,18 @@ Returns a confirmation message that the API is running.
 
 ### POST /agent 
 Simulates a basic AI agent interaction for client inquiries. 
+
+## Project Structure
+
+backend-basics/
+│
+├── app/
+│   ├── main.py
+│   ├── routes/
+│   │   └── agent.py
+│   └── models/
+│       └── schemas.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
